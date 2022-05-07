@@ -1,4 +1,4 @@
-package com.example.aplicaoimc;
+package com.example.aplicacaoimc;
 
 import org.junit.Test;
 

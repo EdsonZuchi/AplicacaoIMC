@@ -1,0 +1,17 @@
+package com.example.aplicacaoimc;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class MainActivity2 extends AppCompatActivity {
+
+    TextView Nm;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main2);
+        Nm = findViewById(R.id.Nome);
+    }
+}

@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:srcCompat="@drawable/perfil"
         tools:layout_editor_absoluteX="0dp" />
@@ -19,19 +19,34 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Calcuradora de IMC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="413dp"
-        android:layout_height="354dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="411dp"
+        android:layout_height="239dp"
+        android:layout_marginTop="76dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome" />
+
+        <EditText
+            android:id="@+id/ColNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/textView2"
@@ -59,12 +74,12 @@
             android:ems="10"
             android:inputType="numberDecimal" />
 
-        <TextView
-            android:id="@+id/textView4"
+        <Button
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="IMC"
-            android:textSize="24sp" />
+            android:onClick="ActionButton"
+            android:text="Calcular" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

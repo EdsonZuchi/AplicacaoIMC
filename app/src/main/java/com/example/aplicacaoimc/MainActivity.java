@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void ActionButton(View view){
         Intent i = new Intent(this, MainActivity2.class);
-        i.putExtra("Nome",Nom.getText());
-        i.putExtra("Peso",Pes.getText());
-        i.putExtra("Alt",Alt.getText());
+        i.putExtra("Nome",Nom.getText().toString());
+        i.putExtra("Peso",Pes.getText().toString());
+        i.putExtra("Alt",Alt.getText().toString());
         startActivity(i);
     }
 
